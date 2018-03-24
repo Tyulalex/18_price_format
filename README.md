@@ -1,6 +1,35 @@
 # Price Formatter
 
-[TODO. There will be project description]
+Script formats price into human readable output
+
+#System requirements
+
+python version 3 installed
+
+
+#How to run
+
+1. Command line interface
+
+```
+python format_price.py --price 4323.0000
+```
+
+2. in the program
+
+```
+from format_price import format_price
+print(format_price(43232.0000))
+```
+
+#Tests
+
+script is covered by unittest
+to run them:
+
+```
+python tests.py
+```
 
 # Project Goals
 
