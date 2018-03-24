@@ -2,12 +2,12 @@
 
 Script formats price into human readable output
 
-#System requirements
+# System requirements
 
 python version 3 installed
 
 
-#How to run
+# How to run
 
 1. Command line interface
 
@@ -22,7 +22,7 @@ from format_price import format_price
 print(format_price(43232.0000))
 ```
 
-#Tests
+# Tests
 
 script is covered by unittest
 to run them:
