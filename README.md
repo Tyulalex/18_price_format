@@ -1,7 +1,7 @@
 # Price Formatter
 
 Script formats price into human readable output
-
+If function cannot parse input price, then None value returned
 # System requirements
 
 python version 3 installed
