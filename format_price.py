@@ -4,9 +4,14 @@ import argparse
 
 def format_price(price):
     price_str = str(price).strip()
-    if re.match(r'^\d+(\.\d*)?$', price_str):
-        return '{:,}'.format(int(float(price_str))).replace(",", " ")
-
+    match_price = re.match(r'^\d+(\.\d*)?$', price_str)
+    if match_price:
+        price = '{:.2f}'.format(float(price))
+        if re.match(r'^\d+\.00$', price):
+            format_pattern = '{:,.0f}'
+        else:
+            format_pattern = '{:,.2f}'
+        return format_pattern.format(float(price)).replace(',', ' ')
 
 def parse_args():
     parser = argparse.ArgumentParser()

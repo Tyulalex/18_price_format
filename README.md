@@ -1,7 +1,7 @@
 # Price Formatter
 
 Script formats price into human readable output
-If function cannot parse input price, then None value returned
+If function cannot parse input price, then **None** value returned
 # System requirements
 
 python version 3 installed
@@ -17,7 +17,7 @@ python format_price.py --price 4323.0000
 
 2. in the program
 
-```
+```python
 from format_price import format_price
 print(format_price(43232.0000))
 ```

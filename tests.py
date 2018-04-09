@@ -23,6 +23,9 @@ class PriceFormatTestCases(unittest.TestCase):
     def test_incorrect_bool_type(self):
         self.assertEqual(None, format_price(True))
 
+    def test_float_two_fixed_points(self):
+        self.assertEqual('1 234.46', format_price(1234.45544))
+
     def test_incorrect_none_type(self):
         self.assertEqual(None, format_price(None))
 
