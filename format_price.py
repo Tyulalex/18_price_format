@@ -10,7 +10,7 @@ def format_price(price):
         if re.match(r'^\d+\.00$', price):
             format_pattern = '{:,.0f}'
         else:
-            format_pattern = '{:,.2f}'
+            format_pattern = '{:,}'
         return format_pattern.format(float(price)).replace(',', ' ')
 
 def parse_args():
